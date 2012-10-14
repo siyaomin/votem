@@ -1,0 +1,15 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+function x(){
+	$.ajax({
+		  type: "POST",
+		  url: "http://localhost:8080/votem/app/user/save",
+		  data: { id:"yaomin" },
+		  contentType:"application/json",
+		  dataType:"json",
+		  success:function(d){alert(d);}
+		});
+}
+x();
+</script>
+<input value="sfadsf" onclick="x()" type="button"/>
